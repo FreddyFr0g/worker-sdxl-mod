@@ -43,12 +43,13 @@ class ModelHandler:
         )
         # Load Base Pipeline from cache using identifier
         base_pipe = StableDiffusionXLPipeline.from_pretrained(
-            "stabilityai/stable-diffusion-xl-base-1.0",
+            "/workspace/illustriousXL.safetensors",
             vae=vae,
             torch_dtype=torch.float16,
             variant="fp16",
             use_safetensors=True,
             add_watermarker=False,
+            safety_checker=None,
             local_files_only=True,
         ).to("cuda")
         
