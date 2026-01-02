@@ -52,7 +52,7 @@ class ModelHandler:
             safety_checker=None,
             local_files_only=True,
         ).to("cuda")
-        
+        # push comment
         # Enable memory optimizations
         base_pipe.enable_xformers_memory_efficient_attention()
         base_pipe.enable_model_cpu_offload()
