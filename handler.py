@@ -43,7 +43,7 @@ class ModelHandler:
         )
         # Load Base Pipeline from cache using identifier
         base_pipe = StableDiffusionXLPipeline.from_pretrained(
-            "/workspace/models/illustriousXL.safetensors",
+            "/runpod-volume/models/illustriousXL.safetensors",
             vae=vae,
             torch_dtype=torch.float16,
             variant="fp16",
