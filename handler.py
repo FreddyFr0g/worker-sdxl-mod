@@ -50,7 +50,7 @@ class ModelHandler:
             variant="fp16",
             use_safetensors=True,
             add_watermarker=False,
-            safety_checker=None,
+            #safety_checker=None,
             local_files_only=True,
         ).to("cuda")
         # push comment
@@ -86,7 +86,7 @@ class ModelHandler:
 
     def load_models(self):
         self.base = self.load_base()
-        self.refiner = self.load_refiner()
+        # self.refiner = self.load_refiner()
 
 
 MODELS = ModelHandler()
