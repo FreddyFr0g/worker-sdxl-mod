@@ -52,3 +52,4 @@ def get_diffusion_pipelines():
 
 if __name__ == "__main__":
     #get_diffusion_pipelines()
+    return null, null, null
