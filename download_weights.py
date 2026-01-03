@@ -32,7 +32,8 @@ def get_diffusion_pipelines():
         "variant": "fp16",
         "use_safetensors": True,
     }
-
+    
+    """
     pipe = fetch_pretrained_model(
         StableDiffusionXLPipeline,
         "stabilityai/stable-diffusion-xl-base-1.0",
@@ -46,10 +47,13 @@ def get_diffusion_pipelines():
         "stabilityai/stable-diffusion-xl-refiner-1.0",
         **common_args,
     )
-
+    """
+    pipe=null
+    vae=null
+    refiner=null
     return pipe, refiner, vae
 
 
 if __name__ == "__main__":
-    #get_diffusion_pipelines()
-    return null, null, null
+    get_diffusion_pipelines()
+    
