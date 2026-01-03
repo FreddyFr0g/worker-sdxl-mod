@@ -51,4 +51,4 @@ def get_diffusion_pipelines():
 
 
 if __name__ == "__main__":
-    get_diffusion_pipelines()
+    #get_diffusion_pipelines()
